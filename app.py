@@ -23,6 +23,11 @@ def genre_totals():
     df3 = pd.read_csv("genre_totals.csv")
     return jsonify(df3.to_dict())
 
+@app.route("/ccu_ratio")
+def ccu_ratio():
+    ccu_ratio_output = pd.read_csv("ccu_ratio.csv")
+    return jsonify(ccu_ratio_output.to_dict())
+
 @app.route("/api/adventure")
 def adventure_api():
     adventure_output = pd.read_csv("Adventure_data_converted.csv")
