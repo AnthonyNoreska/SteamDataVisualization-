@@ -1,0 +1,37 @@
+[
+    {
+        "Mean_Ratio": 5.61,
+        "Median_Ratio": 3.0,
+        "Unnamed: 0": "Action"
+    },
+    {
+        "Mean_Ratio": 5.11,
+        "Median_Ratio": 2.91,
+        "Unnamed: 0": "Strategy"
+    },
+    {
+        "Mean_Ratio": 5.99,
+        "Median_Ratio": 3.0,
+        "Unnamed: 0": "RPG"
+    },
+    {
+        "Mean_Ratio": 6.26,
+        "Median_Ratio": 3.02,
+        "Unnamed: 0": "Indie"
+    },
+    {
+        "Mean_Ratio": 6.47,
+        "Median_Ratio": 3.06,
+        "Unnamed: 0": "Adventure"
+    },
+    {
+        "Mean_Ratio": 4.94,
+        "Median_Ratio": 2.67,
+        "Unnamed: 0": "Sports"
+    },
+    {
+        "Mean_Ratio": 5.25,
+        "Median_Ratio": 2.67,
+        "Unnamed: 0": "Simulation"
+    }
+]

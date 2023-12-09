@@ -1,0 +1,302 @@
+[
+    {
+        "Country": "Global",
+        "GameNames": "Steam Deck",
+        "Index": 1
+    },
+    {
+        "Country": "Global",
+        "GameNames": "Lethal Company",
+        "Index": 2
+    },
+    {
+        "Country": "Global",
+        "GameNames": "Counter-Strike 2",
+        "Index": 3
+    },
+    {
+        "Country": "Global",
+        "GameNames": "PUBG: BATTLEGROUNDS",
+        "Index": 4
+    },
+    {
+        "Country": "Global",
+        "GameNames": "Call of Duty\u00ae",
+        "Index": 5
+    },
+    {
+        "Country": "Global",
+        "GameNames": "Baldur's Gate 3",
+        "Index": 6
+    },
+    {
+        "Country": "Global",
+        "GameNames": "EA SPORTS FC\u2122 24",
+        "Index": 7
+    },
+    {
+        "Country": "Global",
+        "GameNames": "Apex Legends\u2122",
+        "Index": 8
+    },
+    {
+        "Country": "Global",
+        "GameNames": "Cyberpunk 2077",
+        "Index": 9
+    },
+    {
+        "Country": "Global",
+        "GameNames": "Destiny 2",
+        "Index": 10
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "Steam Deck",
+        "Index": 1
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "Lethal Company",
+        "Index": 2
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "Counter-Strike 2",
+        "Index": 3
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "Call of Duty\u00ae",
+        "Index": 4
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "Baldur's Gate 3",
+        "Index": 5
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "Cyberpunk 2077",
+        "Index": 6
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "Cyberpunk 2077: Phantom Liberty",
+        "Index": 7
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "Destiny 2",
+        "Index": 8
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "STAR WARS Jedi: Survivor\u2122",
+        "Index": 9
+    },
+    {
+        "Country": "Canada",
+        "GameNames": "Lost Ark",
+        "Index": 10
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "Street Fighter\u2122 6",
+        "Index": 1
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "Yu-Gi-Oh! Master Duel",
+        "Index": 2
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "Apex Legends\u2122",
+        "Index": 3
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "The Exit 8",
+        "Index": 4
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "HoloParade",
+        "Index": 5
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "Call of Duty\u00ae",
+        "Index": 6
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "eFootball\u2122 2024",
+        "Index": 7
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "NOBUNAGA'S AMBITION: Hadou(not available in your region)",
+        "Index": 8
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "CUSTOM MECH WARS",
+        "Index": 9
+    },
+    {
+        "Country": "Japan",
+        "GameNames": "Lethal Company",
+        "Index": 10
+    },
+    {
+        "Country": "China",
+        "GameNames": "PUBG: BATTLEGROUNDS",
+        "Index": 1
+    },
+    {
+        "Country": "China",
+        "GameNames": "Apex Legends\u2122",
+        "Index": 2
+    },
+    {
+        "Country": "China",
+        "GameNames": "Counter-Strike 2",
+        "Index": 3
+    },
+    {
+        "Country": "China",
+        "GameNames": "NARAKA: BLADEPOINT",
+        "Index": 4
+    },
+    {
+        "Country": "China",
+        "GameNames": "\u96c0\u9b42\u9ebb\u5c07(MahjongSoul)(not available in your region)",
+        "Index": 5
+    },
+    {
+        "Country": "China",
+        "GameNames": "EA SPORTS FC\u2122 24",
+        "Index": 6
+    },
+    {
+        "Country": "China",
+        "GameNames": "Call of Duty\u00ae",
+        "Index": 7
+    },
+    {
+        "Country": "China",
+        "GameNames": "Lethal Company",
+        "Index": 8
+    },
+    {
+        "Country": "China",
+        "GameNames": "\u4ed9\u5251\u5947\u4fa0\u4f20\u7cfb\u5217(not available in your region)",
+        "Index": 9
+    },
+    {
+        "Country": "China",
+        "GameNames": "Baldur's Gate 3",
+        "Index": 10
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "Steam Deck",
+        "Index": 1
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "Lethal Company",
+        "Index": 2
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "Counter-Strike 2",
+        "Index": 3
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "Call of Duty\u00ae",
+        "Index": 4
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "Baldur's Gate 3",
+        "Index": 5
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "EA SPORTS FC\u2122 24",
+        "Index": 6
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "Football Manager 2024",
+        "Index": 7
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "Cyberpunk 2077",
+        "Index": 8
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "Destiny 2",
+        "Index": 9
+    },
+    {
+        "Country": "United Kingdom",
+        "GameNames": "Cyberpunk 2077: Phantom Liberty",
+        "Index": 10
+    },
+    {
+        "Country": "France",
+        "GameNames": "Steam Deck",
+        "Index": 1
+    },
+    {
+        "Country": "France",
+        "GameNames": "Lethal Company",
+        "Index": 2
+    },
+    {
+        "Country": "France",
+        "GameNames": "Call of Duty\u00ae",
+        "Index": 3
+    },
+    {
+        "Country": "France",
+        "GameNames": "Baldur's Gate 3",
+        "Index": 4
+    },
+    {
+        "Country": "France",
+        "GameNames": "Lost Ark",
+        "Index": 5
+    },
+    {
+        "Country": "France",
+        "GameNames": "Cyberpunk 2077",
+        "Index": 6
+    },
+    {
+        "Country": "France",
+        "GameNames": "EA SPORTS FC\u2122 24",
+        "Index": 7
+    },
+    {
+        "Country": "France",
+        "GameNames": "ICARUS",
+        "Index": 8
+    },
+    {
+        "Country": "France",
+        "GameNames": "Valve Index VR Kit",
+        "Index": 9
+    },
+    {
+        "Country": "France",
+        "GameNames": "Counter-Strike 2",
+        "Index": 10
+    }
+]

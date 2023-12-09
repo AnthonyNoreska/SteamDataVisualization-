@@ -1,68 +1,92 @@
+import os
 from flask import Flask, jsonify, render_template
 import pandas as pd
-import csv 
 
 app = Flask(__name__)
 
+# Get the directory where app.py is located
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
 @app.route("/")
-def Index():
-    return "Steam DataBase Analysis"
+def index():
+    return render_template("index.html")
 
 @app.route("/top10gamespercountry")
 def api_top_10():
-    df1 = pd.read_csv("top_10_games_per_country.csv")
-    return jsonify(df1.to_dict())
+    csv_file = os.path.join(base_dir, "top_10_games_per_country.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/genrereview")
-def genre_review_ratios():
-    df2 = pd.read_csv("genre_reviews_ratios.csv")
-    return jsonify(df2.to_dict())
+def api_genre_review_ratios():
+    csv_file = os.path.join(base_dir, "genre_reviews_ratios.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/genre_totals")
-def genre_totals():
-    df3 = pd.read_csv("genre_totals.csv")
-    return jsonify(df3.to_dict())
+def api_genre_totals():
+    csv_file = os.path.join(base_dir, "genre_totals.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/ccu_ratio")
-def ccu_ratio():
-    ccu_ratio_output = pd.read_csv("ccu_ratio.csv")
-    return jsonify(ccu_ratio_output.to_dict())
+def api_ccu_ratio():
+    csv_file = os.path.join(base_dir, "ccu_ratio.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/api/adventure")
-def adventure_api():
-    adventure_output = pd.read_csv("Adventure_data_converted.csv")
-    return jsonify(adventure_output.to_dict())
+def api_adventure():
+    csv_file = os.path.join(base_dir, "adventure_data_converted.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/api/action")
-def action_api():
-    action_output = pd.read_csv("Action_data_converted.csv")
-    return jsonify(action_output.to_dict())
+def api_action():
+    csv_file = os.path.join(base_dir, "action_data_converted.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/api/indie")
-def indie_api():
-    indie_output = pd.read_csv("Indie_data_converted.csv")
-    return jsonify(indie_output.to_dict())
+def api_indie():
+    csv_file = os.path.join(base_dir, "indie_data_converted.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/api/RPG")
-def RPG():
-    rpg_output = pd.read_csv("RPG_data_converted.csv")
-    return jsonify(rpg_output.to_dict())
+def rpg():
+    csv_file = os.path.join(base_dir, "rpg_data_converted.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/api/simulation")
-def simulation():
-    simulation_output = pd.read_csv("Simulation_data_converted.csv")
-    return jsonify(simulation_output.to_dict())
+def api_simulation():
+    csv_file = os.path.join(base_dir, "simulation_data_converted.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/api/sports")
-def sports():
-    sports_output = pd.read_csv("Sports_data_converted.csv")
-    return jsonify(sports_output.to_dict())
+def api_sports():
+    csv_file = os.path.join(base_dir, "sports_data_converted.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 @app.route("/api/strategy")
-def strategy():
-    strategy_output = pd.read_csv("Strategy_data_converted.csv")
-    return jsonify(strategy_output.to_dict())
-
+def api_strategy():
+    csv_file = os.path.join(base_dir, "strategy_data_converted.csv")
+    df = pd.read_csv(csv_file)
+    df = df.fillna("null")
+    return jsonify(df.to_dict(orient='records'))
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

@@ -1,0 +1,37 @@
+[
+    {
+        "Genre": "Action",
+        "Total_Concurrent_Users": 5778276,
+        "Unnamed: 0": 0
+    },
+    {
+        "Genre": "Strategy",
+        "Total_Concurrent_Users": 1894799,
+        "Unnamed: 0": 1
+    },
+    {
+        "Genre": "RPG",
+        "Total_Concurrent_Users": 1651819,
+        "Unnamed: 0": 2
+    },
+    {
+        "Genre": "Indie",
+        "Total_Concurrent_Users": 1858552,
+        "Unnamed: 0": 3
+    },
+    {
+        "Genre": "Adventure",
+        "Total_Concurrent_Users": 3150221,
+        "Unnamed: 0": 4
+    },
+    {
+        "Genre": "Sports",
+        "Total_Concurrent_Users": 388566,
+        "Unnamed: 0": 5
+    },
+    {
+        "Genre": "Simulation",
+        "Total_Concurrent_Users": 1507500,
+        "Unnamed: 0": 6
+    }
+]
