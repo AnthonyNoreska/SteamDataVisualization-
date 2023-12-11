@@ -146,12 +146,12 @@ function getRandomColor(index) {
 function transformDataForPlotly(data, fields, endpoint) {
     let x, y;
 
-// Function to get top 10 items based on a field (descending order)
-function getTop10Items(data, field) {
-    return data
-        .sort((a, b) => b[field] - a[field]) // Sort in descending order
-        .slice(0, 10); // Get top 10 items
-}
+    // Function to get top 10 items based on a field (descending order)
+    function getTop10Items(data, field) {
+        return data
+            .sort((a, b) => b[field] - a[field]) // Sort in descending order
+            .slice(0, 10); // Get top 10 items
+    }
 
     switch (endpoint) {
         case '/top10gamespercountry':
@@ -200,13 +200,19 @@ function getTop10Items(data, field) {
     };
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // DataTable initialization
     $('#dataTable').DataTable();
 
+    let defaultValue = "/top10gamespercountry";
+
+    fetchDataAndPopulateTableAndChart(defaultValue);
+
+    updateCardBodyText(defaultValue.substring(1));
+
     const dropdownItems = document.querySelectorAll('.dropdown-item');
     dropdownItems.forEach(item => {
-        item.addEventListener('click', function(event) {
+        item.addEventListener('click', function (event) {
             let endpoint = event.target.getAttribute('data-value');
             document.getElementById('tableTitle').textContent = event.target.textContent;
 
@@ -240,25 +246,25 @@ document.addEventListener('DOMContentLoaded', function() {
                 cardBodyTextDiv.textContent = 'CCU Ratio: The "CCU Ratio" stands for Concurrent User Ratio. This table show data related to the number of concurrent users for different games. This includes information on the Games, Concurrent User and Price.';
                 break;
             case 'adventure':
-                       cardBodyTextDiv.textContent = 'Adventure Games: This table specifically focuses on adventure genre games. It display various statistics or information specific to adventure games, such as release dates, developers, sales figures, or user ratings.';
+                cardBodyTextDiv.textContent = 'Adventure Games: This table specifically focuses on adventure genre games. It display various statistics or information specific to adventure games, such as release dates, developers, sales figures, or user ratings.';
                 break;
-			case 'action':
-                       cardBodyTextDiv.textContent = 'Action Games: This table specifically focuses on action genre games. It display various statistics or information specific to action games, such as release dates, developers, sales figures, or user ratings.';
+            case 'action':
+                cardBodyTextDiv.textContent = 'Action Games: This table specifically focuses on action genre games. It display various statistics or information specific to action games, such as release dates, developers, sales figures, or user ratings.';
                 break;
-			case 'indie':
-                       cardBodyTextDiv.textContent = 'Indie Games: This table specifically focuses on indie genre games. It display various statistics or information specific to indie games, such as release dates, developers, sales figures, or user ratings.';
+            case 'indie':
+                cardBodyTextDiv.textContent = 'Indie Games: This table specifically focuses on indie genre games. It display various statistics or information specific to indie games, such as release dates, developers, sales figures, or user ratings.';
                 break;
-			case 'rpg':
-                       cardBodyTextDiv.textContent = 'RPG Games: This table specifically focuses on RPG genre games. It display various statistics or information specific to RPG games, such as release dates, developers, sales figures, or user ratings.';
+            case 'rpg':
+                cardBodyTextDiv.textContent = 'RPG Games: This table specifically focuses on RPG genre games. It display various statistics or information specific to RPG games, such as release dates, developers, sales figures, or user ratings.';
                 break;
-			case 'simulation':
-                       cardBodyTextDiv.textContent = 'Simulation Games: This table specifically focuses on simulation genre games. It display various statistics or information specific to simulation games, such as release dates, developers, sales figures, or user ratings.';
+            case 'simulation':
+                cardBodyTextDiv.textContent = 'Simulation Games: This table specifically focuses on simulation genre games. It display various statistics or information specific to simulation games, such as release dates, developers, sales figures, or user ratings.';
                 break;
-			case 'sports':
-                       cardBodyTextDiv.textContent = 'Sports Games: This table specifically focuses on sports genre games. It display various statistics or information specific to sports games, such as release dates, developers, sales figures, or user ratings.';
+            case 'sports':
+                cardBodyTextDiv.textContent = 'Sports Games: This table specifically focuses on sports genre games. It display various statistics or information specific to sports games, such as release dates, developers, sales figures, or user ratings.';
                 break;
-			case 'strategy':
-					   cardBodyTextDiv.textContent = 'Strategy Games: This table specifically focuses on strategystrategy genre games. It display various statistics or information specific to strategy games, such as release dates, developers, sales figures, or user ratings.';
+            case 'strategy':
+                cardBodyTextDiv.textContent = 'Strategy Games: This table specifically focuses on strategystrategy genre games. It display various statistics or information specific to strategy games, such as release dates, developers, sales figures, or user ratings.';
                 break;
             default:
                 cardBodyTextDiv.textContent = 'Select an option to display data';
