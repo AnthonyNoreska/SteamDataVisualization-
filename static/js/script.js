@@ -225,6 +225,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 endpoint = '/' + endpoint;
             }
+
             fetchDataAndPopulateTableAndChart(endpoint);
         });
     });

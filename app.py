@@ -12,6 +12,10 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 def index():
     return render_template("index.html")
 
+@app.route("/other_features")
+def other_features():
+    return render_template("other_features.html")
+
 
 @app.route("/top10gamespercountry")
 def api_top_10():
